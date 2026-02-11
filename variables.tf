@@ -19,7 +19,7 @@ EOT
     workspace_id            = string
     account_key             = optional(string)
     description             = optional(string)
-    service_data_identity   = optional(string, "None")
+    service_data_identity   = optional(string) # Default: "None"
     shared_access_signature = optional(string)
     tags                    = optional(map(string))
   }))
