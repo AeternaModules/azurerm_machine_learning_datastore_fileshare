@@ -1,3 +1,7 @@
+output "machine_learning_datastore_fileshares_id" {
+  description = "Map of id values across all machine_learning_datastore_fileshares, keyed the same as var.machine_learning_datastore_fileshares"
+  value       = { for k, v in azurerm_machine_learning_datastore_fileshare.machine_learning_datastore_fileshares : k => v.id }
+}
 output "machine_learning_datastore_fileshares_account_key" {
   description = "Map of account_key values across all machine_learning_datastore_fileshares, keyed the same as var.machine_learning_datastore_fileshares"
   value       = { for k, v in azurerm_machine_learning_datastore_fileshare.machine_learning_datastore_fileshares : k => v.account_key }
