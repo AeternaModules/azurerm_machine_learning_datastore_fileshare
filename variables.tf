@@ -25,7 +25,7 @@ EOT
     account_key_key_vault_id                      = optional(string)
     account_key_key_vault_secret_name             = optional(string)
     description                                   = optional(string)
-    service_data_identity                         = optional(string) # Default: "None"
+    service_data_identity                         = optional(string)
     shared_access_signature                       = optional(string)
     shared_access_signature_key_vault_id          = optional(string)
     shared_access_signature_key_vault_secret_name = optional(string)
